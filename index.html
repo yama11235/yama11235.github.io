@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Home</title>
+    <style>
+        /* 【追加】なめらかにスクロールさせる設定 */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* 基本スタイル設定 */
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        /* レイアウトコンテナ */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* ナビゲーションバー */
+        nav {
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: right; 
+        }
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #0066cc; 
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* 見出しスタイル */
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #444;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        h3 {
+            font-size: 1.3em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        /* リストスタイル */
+        ul.content-list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        ul.content-list li {
+            margin-bottom: 10px;
+        }
+        .date {
+            color: #666;
+            font-size: 0.9em;
+            margin-left: 5px;
+        }
+
+        /* フッター */
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* レスポンシブ対応 */
+        @media (max-width: 600px) {
+            nav ul {
+                text-align: center;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#publications">Publications</a></li>
+            </ul> </nav>
+
+        <header>
+            <h1>Yusuke Yamauchi</h1>
+            <p>
+                Hello, I'm Yusuke, a second-year Master's student in the Department of Computer Science at the University of Tokyo. Currently, I am researching natural language processing at <a href="https://alab-nii.sakura.ne.jp/test/" target="_blank">Aizawa Lab</a>.<br>
+                email: y_yamauchi [at->@] is.s.u-tokyo.ac.jp
+            </p>
+        </header>
+
+        <section>
+            <h2>Research Interests</h2>
+            <ul class="content-list">
+                <li>Natural Language Processing (NLP)</li>
+                <li>Mechanistic Interpretability</li>
+                <li>Information Retrieval</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <ul class="content-list">
+                <li>
+                    <strong>M.S. in Computer Science</strong> <span class="date">(Apr.2024 - )</span><br>
+                    The University of Tokyo, Japan
+                </li>
+                <li>
+                    <strong>B.S. in Computer Science</strong> <span class="date">(Apr.2020 - Mar.2024)</span><br>
+                    Waseda University, Japan
+                </li>
+            </ul>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+
+            <p style="color: #777; font-size: 0.9em; margin-top: -10px; margin-bottom: 20px;">
+                * Equal contribution
+            </p>
+
+            <h3>2026</h3>
+            <ul class="content-list">
+                <li>
+                    <strong>From Semantics to Style: A Cross-Dataset Comparative Framework for Sentence Similarity Predictions</strong><br>
+                    <b>Yusuke Yamauchi</b>, Akiko Aizawa<br>
+                    <em>Findings of EACL 2026</em>
+                </li>
+                <li>
+                    <strong>Are Emotions Arranged in a Circle? Geometric Analysis of Emotion Representations via Hyperspherical Contrastive Learning</strong><br>
+                    <b>Yusuke Yamauchi</b>, Akiko Aizawa<br>
+                    <em>arXiv Preprint</em>
+                    <a href="https://arxiv.org/abs/2506.13639" target="_blank">[Paper]</a>
+                    <a href="https://github.com/yama11235/EmpiricalCircumplexModel" target="_blank">[Code]</a>
+                </li>
+            </ul>
+
+            <h3>2025</h3>
+            <ul class="content-list">
+                <li>
+                    <strong>Massive Supervised Fine-tuning Experiments Reveal How Data, Layer, and Training Factors Shape LLM Alignment Quality</strong><br>
+                    Yuto Harada<sup>*</sup>, <b>Yusuke Yamauchi</b><sup>*</sup>, Yusuke Oda, Yohei Oseki, Yusuke Miyao, Yu Takagi<br>
+                    <em>EMNLP 2025 (Main)</em>
+                    <a href="https://aclanthology.org/2025.emnlp-main.1138/" target="_blank">[Paper]</a>
+                    <a href="https://github.com/llm-jp/massive-sft" target="_blank">[Code]</a>
+                </li>
+                <li>
+                    <strong>An Empirical Study of LLM-as-a-Judge: How Design Choices Impact Evaluation Reliability</strong><br>
+                    <b>Yusuke Yamauchi</b><sup>*</sup>, Taro Yano<sup>*</sup>, Masafumi Oyamada<br>
+                    <em>arXiv Preprint</em>
+                    <a href="https://arxiv.org/abs/2506.13639" target="_blank">[Paper]</a>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            &copy; 2026 Yusuke Yamauchi. Powered by GitHub Pages.
+        </footer>
+    </div>
+
+</body>
+</html>
