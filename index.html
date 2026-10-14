@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Home</title>
+    <title>Yusuke Yamauchi - Home</title>
     <style>
-        /* 【追加】なめらかにスクロールさせる設定 */
+        /* なめらかなページ内スクロール */
         html {
             scroll-behavior: smooth;
         }
@@ -37,7 +37,7 @@
             list-style-type: none;
             padding: 0;
             margin: 0;
-            text-align: right; 
+            text-align: right;
         }
         nav ul li {
             display: inline;
@@ -45,7 +45,7 @@
         }
         nav a {
             text-decoration: none;
-            color: #0066cc; 
+            color: #0066cc;
             font-weight: bold;
         }
         nav a:hover {
@@ -111,19 +111,20 @@
     </style>
 </head>
 <body>
-
     <div class="container">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#publications">Publications</a></li>
-            </ul> </nav>
+                <li><a href="https://scholar.google.jp/citations?user=1zwrcDwAAAAJ&amp;hl=ja" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+            </ul>
+        </nav>
 
         <header>
             <h1>Yusuke Yamauchi</h1>
             <p>
-                Hello, I'm Yusuke, a second-year Master's student in the Department of Computer Science at the University of Tokyo. Currently, I am researching natural language processing at <a href="https://alab-nii.sakura.ne.jp/test/" target="_blank">Aizawa Lab</a>.<br>
-                email: y_yamauchi [at->@] is.s.u-tokyo.ac.jp
+                Hello, I'm Yusuke, a first-year Ph.D. student in the Department of Computer Science at the University of Tokyo. Currently, I am researching natural language processing at <a href="https://mynlp.is.s.u-tokyo.ac.jp/en/" target="_blank" rel="noopener noreferrer">Miyao Group</a>.<br>
+                email: y_yamauchi [at-&gt;@] is.s.u-tokyo.ac.jp
             </p>
         </header>
 
@@ -140,11 +141,15 @@
             <h2>Education</h2>
             <ul class="content-list">
                 <li>
-                    <strong>M.S. in Computer Science</strong> <span class="date">(Apr.2024 - )</span><br>
+                    <strong>Ph.D. in Computer Science</strong> <span class="date">(Apr. 2026 - Present)</span><br>
                     The University of Tokyo, Japan
                 </li>
                 <li>
-                    <strong>B.S. in Computer Science</strong> <span class="date">(Apr.2020 - Mar.2024)</span><br>
+                    <strong>M.S. in Computer Science</strong> <span class="date">(Apr. 2024 - Mar. 2026)</span><br>
+                    The University of Tokyo, Japan
+                </li>
+                <li>
+                    <strong>B.S. in Computer Science</strong> <span class="date">(Apr. 2020 - Mar. 2024)</span><br>
                     Waseda University, Japan
                 </li>
             </ul>
@@ -160,16 +165,25 @@
             <h3>2026</h3>
             <ul class="content-list">
                 <li>
-                    <strong>From Semantics to Style: A Cross-Dataset Comparative Framework for Sentence Similarity Predictions</strong><br>
+                    <strong>Mapping the Circumplex of Affect: Geometric Analysis of Emotion Representations via Hyperspherical Contrastive Learning</strong><br>
                     <b>Yusuke Yamauchi</b>, Akiko Aizawa<br>
-                    <em>Findings of EACL 2026</em>
+                    <em>ACL 2026 (Main)</em> — <strong>Best Theme Paper</strong><br>
+                    <a href="https://aclanthology.org/2026.acl-long.772/" target="_blank" rel="noopener noreferrer">[Paper]</a>
+                    <a href="https://arxiv.org/abs/2601.06575" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+                    <a href="https://github.com/yama11235/EmpiricalCircumplexModel" target="_blank" rel="noopener noreferrer">[Code]</a>
                 </li>
                 <li>
-                    <strong>Are Emotions Arranged in a Circle? Geometric Analysis of Emotion Representations via Hyperspherical Contrastive Learning</strong><br>
+                    <strong>An Empirical Study of LLM-as-a-Judge: How Design Choices Impact Evaluation Reliability</strong><br>
+                    <b>Yusuke Yamauchi</b>*, Taro Yano*, Masafumi Oyamada<br>
+                    <em>GEM 2026 (Workshop at ACL 2026)</em><br>
+                    <a href="https://aclanthology.org/2026.gem-main.19/" target="_blank" rel="noopener noreferrer">[Paper]</a>
+                    <a href="https://arxiv.org/abs/2506.13639" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+                </li>
+                <li>
+                    <strong>From Semantics to Style: A Cross-Dataset Comparative Framework for Sentence Similarity Predictions</strong><br>
                     <b>Yusuke Yamauchi</b>, Akiko Aizawa<br>
-                    <em>arXiv Preprint</em>
-                    <a href="https://arxiv.org/abs/2601.06575" target="_blank">[Paper]</a>
-                    <a href="https://github.com/yama11235/EmpiricalCircumplexModel" target="_blank">[Code]</a>
+                    <em>Findings of EACL 2026</em><br>
+                    <a href="https://aclanthology.org/2026.findings-eacl.95/" target="_blank" rel="noopener noreferrer">[Paper]</a>
                 </li>
             </ul>
 
@@ -177,16 +191,20 @@
             <ul class="content-list">
                 <li>
                     <strong>Massive Supervised Fine-tuning Experiments Reveal How Data, Layer, and Training Factors Shape LLM Alignment Quality</strong><br>
-                    Yuto Harada<sup>*</sup>, <b>Yusuke Yamauchi</b><sup>*</sup>, Yusuke Oda, Yohei Oseki, Yusuke Miyao, Yu Takagi<br>
-                    <em>EMNLP 2025 (Main)</em>
-                    <a href="https://aclanthology.org/2025.emnlp-main.1138/" target="_blank">[Paper]</a>
-                    <a href="https://github.com/llm-jp/massive-sft" target="_blank">[Code]</a>
+                    Yuto Harada*, <b>Yusuke Yamauchi</b>*, Yusuke Oda, Yohei Oseki, Yusuke Miyao, Yu Takagi<br>
+                    <em>EMNLP 2025 (Main)</em><br>
+                    <a href="https://aclanthology.org/2025.emnlp-main.1138/" target="_blank" rel="noopener noreferrer">[Paper]</a>
+                    <a href="https://github.com/llm-jp/massive-sft" target="_blank" rel="noopener noreferrer">[Code]</a>
                 </li>
+            </ul>
+
+            <h3>2024</h3>
+            <ul class="content-list">
                 <li>
-                    <strong>An Empirical Study of LLM-as-a-Judge: How Design Choices Impact Evaluation Reliability</strong><br>
-                    <b>Yusuke Yamauchi</b><sup>*</sup>, Taro Yano<sup>*</sup>, Masafumi Oyamada<br>
-                    <em>arXiv Preprint</em>
-                    <a href="https://arxiv.org/abs/2506.13639" target="_blank">[Paper]</a>
+                    <strong>LLM-jp: A Cross-organizational Project for the Research and Development of Fully Open Japanese LLMs</strong><br>
+                    LLM-jp collaboration (including <b>Yusuke Yamauchi</b>)<br>
+                    <em>arXiv Preprint</em><br>
+                    <a href="https://arxiv.org/abs/2407.03963" target="_blank" rel="noopener noreferrer">[Paper]</a>
                 </li>
             </ul>
         </section>
@@ -195,8 +213,5 @@
             &copy; 2026 Yusuke Yamauchi. Powered by GitHub Pages.
         </footer>
     </div>
-
 </body>
-
 </html>
-
